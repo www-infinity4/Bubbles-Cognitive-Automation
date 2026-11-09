@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "repository": "www-infinity4/QuantaPhi",
+    "commitSha": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "pageUrl": "https://quantaphi.org/"
+  },
+  "capture": {
+    "id": "DEMO-only-not-live-evidence",
+    "at": "2026-11-08T00:00:00Z",
+    "viewport": {
+      "width": 360,
+      "height": 720
+    },
+    "nodes": [
+      {
+        "tag": "img",
+        "selector": "[data-card=demo] img",
+        "complete": true,
+        "naturalWidth": 0,
+        "rect": {
+          "x": 8,
+          "y": 80,
+          "width": 344,
+          "height": 120
+        }
+      },
+      {
+        "tag": "button",
+        "selector": "#next",
+        "visible": true,
+        "rect": {
+          "x": 340,
+          "y": 350,
+          "width": 28,
+          "height": 22
+        }
+      }
+    ],
+    "consoleErrors": [
+      {
+        "message": "Example synthetic TypeError",
+        "source": "https://quantaphi.org/demo.js"
+      }
+    ],
+    "networkFailures": [],
+    "visionFindings": []
+  }
+}
