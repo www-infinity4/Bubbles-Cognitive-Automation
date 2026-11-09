@@ -54,6 +54,19 @@ test('CLI exports actual portable WidgetPhi manifests and rejects unknown IDs',(
  assert.equal(JSON.parse(call('manifest','search-research')).cards.length,2);
  assert.throws(()=>call('manifest','missing'));
 });
+test('CLI searches source-backed candidates and distinguishes adapter, reference, and blocked states',()=>{
+ const call=(...args)=>execFileSync(process.execPath,[resolve(root,'scripts/template-cli.mjs'),...args],{encoding:'utf8',stdio:['ignore','pipe','pipe']});
+ const searches=['quick card','carousel','Oracle','developer','radio','media','image','video','physics','shopping','directory','news','profile','buttons','search','Cloudflare','PWA'];
+ for(const query of searches)assert.ok(JSON.parse(call('search',query)).length,query);
+ const carousel=JSON.parse(call('search','carousel')).find(x=>x.id==='developer-carousel');
+ assert.equal(carousel.status,'adapter-needed');
+ assert.equal(carousel.instantiable,false);
+ assert.ok(carousel.sources.some(x=>x.commit==='0d2e887949d32a6817b42d071f6bfb8ce741ec42'));
+ const blocked=JSON.parse(call('search','profile')).find(x=>x.status==='blocked');
+ assert.equal(blocked.instantiable,false);
+ assert.ok(JSON.parse(call('category','Shopping')).some(x=>x.id==='shop-phi'));
+ assert.throws(()=>call('manifest','developer-carousel'));
+});
 test('static gallery has accessible tap targets and data-only text rendering',()=>{
  const css=readFileSync(resolve(root,'site/oracle.css'),'utf8');
  assert.match(css,/#f7f4f0/);assert.match(css,/#b83b32/);assert.match(css,/min-height:44px/);assert.match(css,/@media\(max-width:400px\)/);

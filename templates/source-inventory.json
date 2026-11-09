@@ -1,0 +1,489 @@
+{
+  "schema": "bubbles.template.inventory",
+  "version": 1,
+  "sourceCensus": {
+    "repository": "www-infinity4/QuantaPhi",
+    "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42",
+    "rootEntries": 466,
+    "rootFiles": 412,
+    "rootDirectories": 54,
+    "nestedAreasListed": [
+      "apps",
+      "apps/icons",
+      "apps/manifests",
+      "assets",
+      "catalog",
+      "data",
+      "docs",
+      "scripts",
+      "src",
+      "test",
+      "tests",
+      "tools",
+      "workers",
+      "workers/product-directory",
+      "workers/quick-card-publisher"
+    ],
+    "recursiveTreeStatus": "unavailable: GitHub recursive-tree API returned HTTP 403",
+    "scope": "Pinned root path inventory and category-relevant nested directories; file candidates were classified by source, settings, tests, styles, assets, controls, and backend requirements. This is not a full recursive AST/runtime audit."
+  },
+  "classificationCounts": {
+    "usable-now": 7,
+    "adapter-needed": 5,
+    "reference-only": 3,
+    "blocked": 2,
+    "not-reusable": 2
+  },
+  "items": [
+    {
+      "id": "oracle-quick-card",
+      "title": "Oracle Quick Card Builder",
+      "category": "Developer",
+      "status": "usable-now",
+      "instantiable": true,
+      "templatePath": "templates/oracle-quick-card.json",
+      "widgetphiCardIds": ["card-builder-desk"],
+      "terms": ["quick card", "builder", "developer", "Oracle", "buttons", "image"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "quick-card-builder.html"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "quick-card-builder.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "published-quick-card.css"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "oracle-interface.css"}
+      ],
+      "dependencies": ["WidgetPhi card-builder-desk", "QuantaPhi's existing Quick Card publisher and review flow"],
+      "operatingMode": "WidgetPhi v1 configuration; public publishing and discovery remain separate reviewed QuantaPhi operations.",
+      "accessibility": {"status": "not-runtime-verified", "evidence": "Source form and styles are pinned; no 320/360/393px browser or Android acceptance was performed for this catalog."},
+      "functionalEvidence": "The pinned builder has title, website, description, interaction, supported behavior, preview, image, and publish fields; new cards remain unlisted until reviewed.",
+      "artwork": {"status": "original-source-artwork", "path": "apps/icons/web-phi-512.png"},
+      "rights": "Provenance is pinned; reuse license was not independently cleared and no executable source or artwork is copied here.",
+      "integration": "WidgetPhi manifest only; source UI, publishing, permissions, and production operation are not instantiated by this template."
+    },
+    {
+      "id": "media-star",
+      "title": "Media Star Creator",
+      "category": "Media",
+      "status": "usable-now",
+      "instantiable": true,
+      "templatePath": "templates/media-star.json",
+      "widgetphiCardIds": ["media-star"],
+      "terms": ["media", "radio", "audio", "video", "image", "creator", "Oracle"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "media-star-creator.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "media-star-creator.css"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "apps/icons/media-star-512.png"},
+        {"repo": "www-infinity4/WidgetPhi", "commit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083", "path": "catalog/cards.json"}
+      ],
+      "dependencies": ["WidgetPhi media-star", "publisher-provided authorized media URL", "independent backend for any future billing"],
+      "operatingMode": "WidgetPhi v1 configuration; exported creator cards use the publisher's own source and do not inherit Phi catalogs or ledgers.",
+      "accessibility": {"status": "source-reviewed-runtime-unverified", "evidence": "Source includes labeled creator inputs, player controls, status feedback, and original-source links; viewport acceptance was not performed."},
+      "functionalEvidence": "Pinned creator code validates HTTP(S) sources and offers local preview/copy; it explicitly keeps payments and credit payouts off.",
+      "artwork": {"status": "original-source-artwork", "path": "apps/icons/media-star-512.png"},
+      "rights": "Provenance is pinned; creator media rights remain the publisher's responsibility, and no source/media content is copied.",
+      "integration": "Manifest is usable; provider playback, source permissions, production credits, and any payment remain separately verified."
+    },
+    {
+      "id": "infinity-radio",
+      "title": "Infinity Radio Player",
+      "category": "Media",
+      "status": "usable-now",
+      "instantiable": true,
+      "templatePath": "templates/infinity-radio.json",
+      "widgetphiCardIds": ["infinity-radio"],
+      "terms": ["radio", "audio", "media", "player", "Oracle"],
+      "sources": [
+        {"repo": "www-infinity4/Oracle-Octaves", "commit": "390ac5e5358e08aecd487bea81741b8e82b8176a", "path": "oracle-infinity-radio.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "oracle-interface.css"},
+        {"repo": "www-infinity4/WidgetPhi", "commit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083", "path": "catalog/cards.json"}
+      ],
+      "dependencies": ["WidgetPhi infinity-radio", "authorized station index and compatible player"],
+      "operatingMode": "WidgetPhi v1 configuration; empty station index and autoplay disabled by default.",
+      "accessibility": {"status": "not-runtime-verified", "evidence": "Pinned source references exist; station playback, focus behavior, and mobile target sizes were not independently exercised."},
+      "functionalEvidence": "The canonical settings include station title, authorized feed index, and autoplay; the template does not invent a stream.",
+      "artwork": {"status": "original-source-artwork", "path": "apps/icons/infinity-radio-512.png"},
+      "rights": "Provenance is pinned; station, recording, and artwork reuse rights were not independently cleared and no media is copied.",
+      "integration": "Configuration only; a real authorized station and successful player/browser acceptance are required for live use."
+    },
+    {
+      "id": "story-writer",
+      "title": "Story Writer Studio",
+      "category": "Creative",
+      "status": "usable-now",
+      "instantiable": true,
+      "templatePath": "templates/story-writer.json",
+      "widgetphiCardIds": ["story-writer"],
+      "terms": ["story", "image", "creative", "writing", "Oracle"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "phi-story-writer.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "phi-story-writer.css"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "phi-visual-render.js"},
+        {"repo": "www-infinity4/WidgetPhi", "commit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083", "path": "catalog/cards.json"}
+      ],
+      "dependencies": ["WidgetPhi story-writer", "user-provided themes and images", "separately available image/model endpoint"],
+      "operatingMode": "WidgetPhi v1 configuration; local draft and image behavior is not a promise of hosted generation.",
+      "accessibility": {"status": "not-runtime-verified", "evidence": "Pinned source/style paths identified; keyboard and Android acceptance were not run for this catalog."},
+      "functionalEvidence": "QuantaPhi source describes browser-local drafts and IndexedDB image blobs; provider/model availability is not asserted.",
+      "artwork": {"status": "original-source-artwork", "path": "apps/icons/story-writer-512.png"},
+      "rights": "Provenance is pinned; user-provided image and story rights remain user-controlled; no source content is copied.",
+      "integration": "Manifest only; private drafts, retention, model calls, and publication require separate authorized runtime behavior."
+    },
+    {
+      "id": "physics-experiment",
+      "title": "Physics Experiment Card",
+      "category": "Learning",
+      "status": "usable-now",
+      "instantiable": true,
+      "templatePath": "templates/physics-experiment.json",
+      "widgetphiCardIds": ["physics-experiment"],
+      "terms": ["physics", "science", "experiment", "image", "Oracle"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "science-quick-card.html"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "science-quick-cards.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "apps/icons/physics-cards-512.png"},
+        {"repo": "www-infinity4/WidgetPhi", "commit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083", "path": "catalog/cards.json"}
+      ],
+      "dependencies": ["WidgetPhi physics-experiment", "verified topic sources", "age-appropriate safety review"],
+      "operatingMode": "WidgetPhi v1 configuration; the starter is source/reference configuration, not measured experimental output.",
+      "accessibility": {"status": "source-reviewed-runtime-unverified", "evidence": "Pinned science page contains responsive cards and large buttons; viewport/browser checks were not run here."},
+      "functionalEvidence": "The pinned science page is an independent source-linked Quick Card; the manifest's empty story fields do not fabricate measurements.",
+      "artwork": {"status": "original-source-artwork", "path": "apps/icons/physics-cards-512.png"},
+      "rights": "Provenance is pinned; source artwork/license clearance is not asserted and no content is copied.",
+      "integration": "Configuration only; cite current sources and safety notes before a real experiment is presented."
+    },
+    {
+      "id": "shop-phi",
+      "title": "Shop Phi Product Card",
+      "category": "Shopping",
+      "status": "usable-now",
+      "instantiable": true,
+      "templatePath": "templates/shop-phi.json",
+      "widgetphiCardIds": ["shop-phi"],
+      "terms": ["shopping", "merchant", "product", "image", "Oracle"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "shop-phi-switchboard.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "shop-phi-switchboard.css"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "shop-phi-policy.js"},
+        {"repo": "www-infinity4/WidgetPhi", "commit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083", "path": "catalog/cards.json"}
+      ],
+      "dependencies": ["WidgetPhi shop-phi", "real merchant URLs, item images, and source disclosures"],
+      "operatingMode": "WidgetPhi v1 configuration; source links and curation only, no checkout or wallet settlement.",
+      "accessibility": {"status": "source-reviewed-runtime-unverified", "evidence": "Upstream tests assert mobile paging, source-image fallback, and 48px controls; no Android runtime check was performed for this catalog."},
+      "functionalEvidence": "Pinned switchboard tests exercise real-source filters, missing-image disclosure, sponsor labeling, and no wallet credit path.",
+      "artwork": {"status": "original-source-artwork", "path": "apps/icons/shoplc-512.png"},
+      "rights": "Provenance is pinned; merchants retain image/content rights and source license was not independently cleared; no products are copied.",
+      "integration": "Configuration only; never infer product availability, pricing, affiliate rights, purchase, or payment from this manifest."
+    },
+    {
+      "id": "search-research",
+      "title": "Search & Research Cards",
+      "category": "Research",
+      "status": "usable-now",
+      "instantiable": true,
+      "templatePath": "templates/search-research.json",
+      "widgetphiCardIds": ["search-engine", "research-viewer"],
+      "terms": ["search", "viewer", "images", "research", "Oracle"],
+      "sources": [
+        {"repo": "www-infinity4/WidgetPhi", "commit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083", "path": "src/catalog.js"},
+        {"repo": "www-infinity4/WidgetPhi", "commit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083", "path": "catalog/cards.json"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "quick-card-search-core.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "assets/phi-data-analyst.webp"}
+      ],
+      "dependencies": ["WidgetPhi search-engine and research-viewer", "tenant-approved and published sources"],
+      "operatingMode": "WidgetPhi v1 configuration; provider embeds remain conditional and user research is not included.",
+      "accessibility": {"status": "not-runtime-verified", "evidence": "Pinned source paths and strict allowed settings are known; no 320/360/393px browser acceptance was run."},
+      "functionalEvidence": "WidgetPhi's canonical catalog defines both card IDs and their exact fields; QuantaPhi search source rejects invalid source URLs.",
+      "artwork": {"status": "original-source-artwork", "path": "assets/phi-data-analyst.webp"},
+      "rights": "Provenance is pinned; data-provider/license status must be reviewed per source and no research data is copied.",
+      "integration": "Valid WidgetPhi manifest only; no private history, external provider iframe, AI call, or data capture is authorized by selection."
+    },
+    {
+      "id": "developer-carousel",
+      "title": "Oracle Developer Carousel",
+      "category": "Developer",
+      "status": "adapter-needed",
+      "instantiable": false,
+      "widgetphiCardIds": [],
+      "terms": ["carousel", "developer", "quick card", "builder", "image", "buttons", "Oracle"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "developer-carousel-core.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "developer-carousel.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "developer-carousel.css"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "developer-discovery-core.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "source-quick-cards.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "tests/developer-carousel.test.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "quick-card-builder.html"}
+      ],
+      "dependencies": ["Existing QuantaPhi builder modules and their original images", "reviewed WidgetPhi carousel adapter (not registered)"],
+      "operatingMode": "QuantaPhi native carousel; not a WidgetPhi card or Bubbles-executable template.",
+      "accessibility": {"status": "source-tested-runtime-unverified", "evidence": "Pinned upstream tests assert real builder identity, previous/next wrapping, in-card forms, and 44px CSS targets; Android/browser viewport acceptance is absent."},
+      "functionalEvidence": "The pinned carousel keeps five original builders, direct choices, previous/next navigation, and the real reviewed Quick Card publisher in its selected slide.",
+      "artwork": {"status": "multiple-original-images-no-composite", "path": "Each real builder's image in developer-carousel-core.mjs; do not fabricate a combined preview."},
+      "rights": "Pinned provenance only; source/artwork reuse rights are not independently cleared and no code or artwork is copied.",
+      "adapterContract": {
+        "widgetphiCardId": null,
+        "required": ["Preserve original builder modules and their moderation", "Use per-builder original artwork or show an explicit missing-artwork state", "Expose accessible previous/next and direct selection controls", "Do not replace, duplicate, or auto-submit the original forms"],
+        "acceptance": ["WidgetPhi catalog registration and strict settings", "Functional tests for each original builder and carousel navigation", "320/360/393px keyboard and Android accessibility review", "No auto-publish, payment, identity, or provider permission expansion"],
+        "forbidden": ["Inventing a WidgetPhi card ID", "Copying QuantaPhi executable source into this repository", "Claiming live operation from configuration tests"]
+      }
+    },
+    {
+      "id": "directory-data",
+      "title": "Source-backed Directory and Worker/D1 Building Blocks",
+      "category": "Directory",
+      "status": "adapter-needed",
+      "instantiable": false,
+      "widgetphiCardIds": [],
+      "terms": ["directory", "business", "restaurant", "product", "shopping", "Cloudflare", "Worker", "D1"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "attractions-directory.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "workers/attractions-directory.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "restaurant-directory.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "workers/restaurant-directory.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "business-directory-card.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "workers/business-directory.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "workers/product-directory/worker.mjs"}
+      ],
+      "dependencies": ["Specific Worker route and D1 binding per source", "lawful, current source records", "independent authenticated deployment and tenant scoping"],
+      "operatingMode": "Reference implementations span separate directories and providers; no unified WidgetPhi directory adapter is registered.",
+      "accessibility": {"status": "not-audited-for-this-inventory", "evidence": "Relevant UI and Worker paths are pinned; no end-to-end directory or mobile browser check was performed."},
+      "functionalEvidence": "Pinned source tree contains separate attraction, restaurant, business, and product directory front ends and Worker entry points; operational data completeness is not inferred.",
+      "artwork": {"status": "adapter-artwork-required", "path": "Use a source-verified directory-specific image; no generic directory artwork is supplied."},
+      "rights": "Source links are provenance only; directory-record and image rights/freshness must be reviewed for each data provider.",
+      "adapterContract": {
+        "widgetphiCardId": null,
+        "required": ["Choose one source-specific directory and its existing Worker/D1 contract", "Preserve source attribution, freshness, and tenant boundaries", "Return empty/error states instead of fabricated listings"],
+        "acceptance": ["Add an approved WidgetPhi ID and strict settings contract", "Verify read-only public data and authorization boundaries", "Run real source and Android viewport tests before marking usable"],
+        "forbidden": ["Cloudflare writes or deployment from this catalog", "Invented nationwide records", "Merchant purchase, wallet, or OAuth operations"]
+      }
+    },
+    {
+      "id": "image-video-studio",
+      "title": "Image and Video Studio Building Blocks",
+      "category": "Media",
+      "status": "adapter-needed",
+      "instantiable": false,
+      "widgetphiCardIds": [],
+      "terms": ["image", "video", "media", "studio", "builder", "Oracle"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "phi-image-builder.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "phi-image-builder.css"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "phi-video-builder.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "phi-visual-render.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "oracle-video-studio.css"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "video-studio.html"}
+      ],
+      "dependencies": ["QuantaPhi image/storyboard endpoints for generated content", "browser image/video APIs and supported encoder", "user-owned or cleared media inputs"],
+      "operatingMode": "QuantaPhi-native tools; no matching WidgetPhi IDs or standalone template adapter is registered.",
+      "accessibility": {"status": "not-runtime-verified", "evidence": "Pinned video source uses labeled controls and status feedback; image/video viewport, keyboard, and Android checks were not performed."},
+      "functionalEvidence": "Video source validates image inputs, builds a local animation and exports only when supported; generated storyboards require an external service.",
+      "artwork": {"status": "source-artwork-available-adapter-required", "path": "apps/icons/image-generator-512.png; no combined image/video artwork."},
+      "rights": "Pinned provenance only; source image, audio, generated media, and model rights remain unresolved per user input.",
+      "adapterContract": {
+        "widgetphiCardId": null,
+        "required": ["Keep generation conditional on a real authorized endpoint", "Preserve local media validation and cancellation", "Show honest unsupported-browser and missing-service states"],
+        "acceptance": ["Register a WidgetPhi ID and allowed settings", "Test local-only image/video path separately from provider generation", "Verify 320/360/393px touch, keyboard, and Android behavior"],
+        "forbidden": ["Fake generated images, streams, or provider receipts", "Using a remote model or media source without actual permission"]
+      }
+    },
+    {
+      "id": "news-source-cards",
+      "title": "News and Current-Events Source Cards",
+      "category": "News",
+      "status": "adapter-needed",
+      "instantiable": false,
+      "widgetphiCardIds": [],
+      "terms": ["news", "source", "directory", "search", "image"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "world-series-news.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "world-series-score.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "world-series-updates.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "newsroom-draft.mjs"}
+      ],
+      "dependencies": ["Current licensed/public source feed", "attribution and publication review", "provider-specific adapter"],
+      "operatingMode": "Source-specific QuantaPhi pages and feed modules; no general WidgetPhi news card ID was identified.",
+      "accessibility": {"status": "not-audited-for-this-inventory", "evidence": "File paths were identified in the pinned source tree; no news UI/runtime audit was performed."},
+      "functionalEvidence": "These source paths represent topic-specific current-news and editorial workflows, not a verified general-purpose news template.",
+      "artwork": {"status": "adapter-artwork-required", "path": "Use only source-cleared story artwork; do not synthesize a current-news thumbnail."},
+      "rights": "Provider text, photo, and syndication rights are not established by source presence.",
+      "adapterContract": {
+        "widgetphiCardId": null,
+        "required": ["Choose an approved feed and show source timestamp and attribution", "Represent empty or stale feeds honestly", "Keep editorial submission distinct from publication"],
+        "acceptance": ["WidgetPhi registration and source-specific tests", "Verify rights, timestamp handling, and accessibility"],
+        "forbidden": ["Fabricated news or source receipts", "Automatic public publishing"]
+      }
+    },
+    {
+      "id": "neutral-card-controls",
+      "title": "Bubbles Card Workspace and Neutral Controls",
+      "category": "Controls",
+      "status": "adapter-needed",
+      "instantiable": false,
+      "widgetphiCardIds": [],
+      "terms": ["buttons", "controls", "card", "search", "developer", "Oracle"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "bubbles-card-workspace.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "bubbles-action-driver.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "quanta-card-actions.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "phi-card-controls.css"}
+      ],
+      "dependencies": ["Existing Bubbles/QuantaPhi card host", "registered tool and control allowlists"],
+      "operatingMode": "Bubbles chat surface controls; not a portable WidgetPhi card and does not issue source-write permission.",
+      "accessibility": {"status": "not-audited-for-this-inventory", "evidence": "Workspace creates named buttons and status text; host-level mobile verification was not performed."},
+      "functionalEvidence": "Pinned workspace inspects named visible controls, keeps media status separate, and drafts rather than applies source edits.",
+      "artwork": {"status": "not-applicable-to-control-pattern", "reason": "Controls use the selected card's real artwork; no standalone preview is supplied."},
+      "rights": "Pinned provenance only; no code is copied and no permission scope is inherited.",
+      "adapterContract": {
+        "widgetphiCardId": null,
+        "required": ["Use existing native controls and actual card identity", "Avoid duplicate Share/Collect/Star/Follow/+1 Build actions", "Keep all state-changing operations behind their original authenticated routes"],
+        "acceptance": ["Register only a neutral, non-executing adapter contract", "Test keyboard, 44px targets, and 320/360/393px layouts"],
+        "forbidden": ["Synthetic clicks presented as proof of playback or writes", "Adding payment, identity, repository-write, or deployment authority"]
+      }
+    },
+    {
+      "id": "oracle-octaves-style",
+      "title": "Oracle Octaves Visual System",
+      "category": "Design",
+      "status": "reference-only",
+      "instantiable": false,
+      "widgetphiCardIds": [],
+      "terms": ["Oracle", "paper", "white", "red", "chrome", "style", "image", "accessibility"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "oracle-interface.css"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "oracle-octaves.css"}
+      ],
+      "dependencies": ["Consumer's own CSS and component structure"],
+      "operatingMode": "Design reference only; CSS is not packaged or applied by a WidgetPhi manifest.",
+      "accessibility": {"status": "source-reviewed-not-runtime-verified", "evidence": "Pinned CSS includes responsive styles, focus-visible rules, reduced-motion handling, and per-card accents; no device check was performed."},
+      "functionalEvidence": "Style tokens establish paper/white surfaces, red primary color, per-card colors, and responsive behavior; no standalone controls.",
+      "artwork": {"status": "not-applicable-to-style-reference", "reason": "This entry is a CSS design reference, not an image or card preview."},
+      "rights": "Pinned provenance only; no stylesheet is copied.",
+      "integration": "Consumers should preserve each original card's artwork and controls; this entry is not instantiable."
+    },
+    {
+      "id": "pwa-app-shell",
+      "title": "QuantaPhi App and PWA Shell",
+      "category": "Developer",
+      "status": "reference-only",
+      "instantiable": false,
+      "widgetphiCardIds": [],
+      "terms": ["PWA", "Android", "offline", "app", "launcher", "profile"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "apps/index.html"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "apps/launch.html"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "apps/launch.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "apps/sw.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "apps/suite.css"}
+      ],
+      "dependencies": ["Site-level web manifest, service-worker scope, and installable assets"],
+      "operatingMode": "Site/app shell reference; it is not an embeddable WidgetPhi site card.",
+      "accessibility": {"status": "not-audited-for-this-inventory", "evidence": "Nested app shell paths are pinned; offline, install, keyboard, and Android operation were not tested."},
+      "functionalEvidence": "Pinned tree contains a distinct app launcher, offline page, service worker, and shell styles; this does not prove an installed PWA works.",
+      "artwork": {"status": "original-source-assets-exist-not-adapted", "path": "apps/icons/*"},
+      "rights": "Pinned provenance only; no shell or art copied.",
+      "integration": "Site-level reference only; requires its own PWA acceptance, not a WidgetPhi card adapter."
+    },
+    {
+      "id": "quanta-card-renderer",
+      "title": "QuantaPhi Card Renderer and Source Image Helpers",
+      "category": "Developer",
+      "status": "reference-only",
+      "instantiable": false,
+      "widgetphiCardIds": [],
+      "terms": ["card", "image", "search", "buttons", "carousel", "Oracle"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "quanta-card-experience.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "card-source-images.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "oracle-card-deck.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "quanta-card-actions.mjs"}
+      ],
+      "dependencies": ["Existing QuantaPhi card runtime, routes, and state"],
+      "operatingMode": "Runtime implementation reference; executable source remains in QuantaPhi.",
+      "accessibility": {"status": "not-audited-for-this-inventory", "evidence": "Pinned source module paths were inspected; component-level mobile behavior was not independently run."},
+      "functionalEvidence": "These modules are shared QuantaPhi card rendering, source-image, and action infrastructure, not independent user-selected templates.",
+      "artwork": {"status": "not-applicable-to-runtime-reference", "reason": "The original renderer displays each card's actual source image."},
+      "rights": "Pinned provenance only; no executable source is copied.",
+      "integration": "Reference-only; do not fork or duplicate the QuantaPhi runtime."
+    },
+    {
+      "id": "private-profile",
+      "title": "Private Profile and Identity Storage",
+      "category": "Privacy",
+      "status": "blocked",
+      "instantiable": false,
+      "widgetphiCardIds": [],
+      "terms": ["profile", "identity", "private", "personal", "Cloudflare"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "bubbles-identity-settings.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "bubbles-identity-settings-core.mjs"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "workers/identity-vault"}
+      ],
+      "dependencies": ["Separately authenticated identity provider, consent, tenant isolation, and security review"],
+      "operatingMode": "Permission-sensitive storage; not a user-facing reusable starter template.",
+      "accessibility": {"status": "not-audited-for-this-inventory", "evidence": "No user identity flow or vault was exercised."},
+      "functionalEvidence": "Source paths establish identity UI and vault components exist; their presence does not authorize access to private profile data.",
+      "artwork": {"status": "blocked", "reason": "No identity or private-data artwork is supplied for this catalog."},
+      "rights": "No user data or private history is included.",
+      "permissionBoundary": "Blocked pending independent user authentication, explicit consent, and privacy/security acceptance; selection cannot read or write profile data."
+    },
+    {
+      "id": "wallet-settlement",
+      "title": "Wallet, Coin, Purchase, and Settlement Operations",
+      "category": "Payments",
+      "status": "blocked",
+      "instantiable": false,
+      "widgetphiCardIds": [],
+      "terms": ["wallet", "payment", "shopping", "purchase", "coin", "settlement", "Cloudflare"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "wallet-runtime.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "star-coin-cloud.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "workers/unified-wallet"}
+      ],
+      "dependencies": ["Separately authenticated payment infrastructure, idempotent settlement, and human/legal review"],
+      "operatingMode": "Permission-sensitive financial infrastructure; blocked from reusable template instantiation.",
+      "accessibility": {"status": "not-applicable", "evidence": "No financial workflow is exposed by this inventory."},
+      "functionalEvidence": "Pinned runtime and Worker source paths are not evidence of authorization, a purchase, or a completed settlement.",
+      "artwork": {"status": "blocked", "reason": "No fake payment or wallet preview is permitted."},
+      "rights": "No wallet data, secrets, or credentials are included.",
+      "permissionBoundary": "No mint, spend, purchase, payout, checkout, or Cloudflare write can be initiated from this catalog."
+    },
+    {
+      "id": "owner-content-data",
+      "title": "Owner-Specific Media and Story Data",
+      "category": "Content",
+      "status": "not-reusable",
+      "instantiable": false,
+      "widgetphiCardIds": [],
+      "terms": ["media", "story", "image", "data", "profile"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "media-star-index.json"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "infinite-book-catalog.json"}
+      ],
+      "dependencies": [],
+      "operatingMode": "Content/data assets, not reusable code or a template.",
+      "accessibility": {"status": "not-applicable", "evidence": "No data asset was loaded into this repository."},
+      "functionalEvidence": "These are content catalog paths, deliberately excluded from templates.",
+      "artwork": {"status": "not-applicable", "reason": "No owner-specific content or images are copied."},
+      "rights": "Excluded to avoid copying owner content or user data.",
+      "integration": "Do not import, index, or expose these data files as Bubbles template defaults."
+    },
+    {
+      "id": "duplicate-responsive-stylesheet",
+      "title": "Duplicate Responsive Stylesheet Alias",
+      "category": "Design",
+      "status": "not-reusable",
+      "instantiable": false,
+      "widgetphiCardIds": [],
+      "terms": ["responsive", "style", "CSS", "duplicate", "Android"],
+      "sources": [
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "bubbles-responsive-20261026-v2.css"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "bubbles-responsive-site.css"}
+      ],
+      "dependencies": [],
+      "operatingMode": "Duplicate source files, not independent components.",
+      "accessibility": {"status": "not-applicable", "evidence": "Both GitHub tree entries have the same Git blob SHA and size."},
+      "functionalEvidence": "The pinned root listing reports identical blob SHA `1fa32dccd19ae7ea10ae8b8f75d1e741b9a50093` and size 11359 for both paths.",
+      "artwork": {"status": "not-applicable", "reason": "Stylesheet duplicate."},
+      "rights": "No CSS is copied.",
+      "integration": "Deduplicate by content identity; do not add a second template."
+    }
+  ]
+}

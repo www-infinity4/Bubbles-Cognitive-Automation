@@ -7,6 +7,11 @@
     "path": "catalog/cards.json",
     "commit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083"
   },
+  "inventory": {
+    "path": "templates/source-inventory.json",
+    "schema": "bubbles.template.inventory",
+    "version": 1
+  },
   "templates": [
     {
       "id": "oracle-quick-card",
