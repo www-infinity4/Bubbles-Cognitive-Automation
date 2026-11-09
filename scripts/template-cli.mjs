@@ -6,7 +6,8 @@ import {fileURLToPath} from 'node:url';
 const root=resolve(dirname(fileURLToPath(import.meta.url)),'..');
 const read=p=>JSON.parse(readFileSync(resolve(root,p),'utf8'));
 const catalog=read('templates/index.json');
-const inventory=read(catalog.inventory.path);
+if(catalog.inventory?.path!=='templates/source-inventory.json')throw Error('Invalid source inventory path in catalog');
+const inventory=read('templates/source-inventory.json');
 const entries=catalog.templates;
 const records=new Map(inventory.items.map(item=>[item.id,item]));
 const normalize=value=>String(value||'').normalize('NFKC').toLowerCase().replace(/[^a-z0-9]+/g,' ').trim();
@@ -74,7 +75,7 @@ if(action==='list'){
  const entry=entries.find(item=>item.id===id);
  const record=records.get(id);
  if(action==='manifest'){
-  if(!entry){console.error(record?'Template requires an adapter and cannot be instantiated.':'Unknown template ID.');process.exitCode=record?3:2;}
+  if(!entry){console.error(record?`Template is ${record.status} and cannot be instantiated.`:'Unknown template ID.');process.exitCode=record?3:2;}
   else process.stdout.write(JSON.stringify(readTemplate(entry).widgetphi,null,2)+'\n');
  }else if(entry)process.stdout.write(JSON.stringify(readTemplate(entry),null,2)+'\n');
  else if(record)process.stdout.write(JSON.stringify(record,null,2)+'\n');

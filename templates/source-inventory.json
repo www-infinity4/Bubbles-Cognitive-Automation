@@ -98,10 +98,10 @@
       "dependencies": ["WidgetPhi infinity-radio", "authorized station index and compatible player"],
       "operatingMode": "WidgetPhi v1 configuration; empty station index and autoplay disabled by default.",
       "accessibility": {"status": "not-runtime-verified", "evidence": "Pinned source references exist; station playback, focus behavior, and mobile target sizes were not independently exercised."},
-      "functionalEvidence": "The canonical settings include station title, authorized feed index, and autoplay; the template does not invent a stream.",
+      "functionalEvidence": "Pinned player source has real play/pause, next, volume, and HTTPS host-validated track controls. It can call an Oracle Octaves listening-reward hook after a track; that hook is not part of this WidgetPhi manifest and is not authorized or verified here.",
       "artwork": {"status": "original-source-artwork", "path": "apps/icons/infinity-radio-512.png"},
       "rights": "Provenance is pinned; station, recording, and artwork reuse rights were not independently cleared and no media is copied.",
-      "integration": "Configuration only; a real authorized station and successful player/browser acceptance are required for live use."
+      "integration": "Configuration only; a real authorized station and successful player/browser acceptance are required for live use. Do not copy or enable the separate listening-reward hook through this manifest."
     },
     {
       "id": "story-writer",
@@ -162,6 +162,7 @@
         {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "shop-phi-switchboard.mjs"},
         {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "shop-phi-switchboard.css"},
         {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "shop-phi-policy.js"},
+        {"repo": "www-infinity4/QuantaPhi", "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42", "path": "tests/shop-phi-switchboard.test.mjs"},
         {"repo": "www-infinity4/WidgetPhi", "commit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083", "path": "catalog/cards.json"}
       ],
       "dependencies": ["WidgetPhi shop-phi", "real merchant URLs, item images, and source disclosures"],
@@ -222,7 +223,7 @@
         "widgetphiCardId": null,
         "required": ["Preserve original builder modules and their moderation", "Use per-builder original artwork or show an explicit missing-artwork state", "Expose accessible previous/next and direct selection controls", "Do not replace, duplicate, or auto-submit the original forms"],
         "acceptance": ["WidgetPhi catalog registration and strict settings", "Functional tests for each original builder and carousel navigation", "320/360/393px keyboard and Android accessibility review", "No auto-publish, payment, identity, or provider permission expansion"],
-        "forbidden": ["Inventing a WidgetPhi card ID", "Copying QuantaPhi executable source into this repository", "Claiming live operation from configuration tests"]
+        "forbidden": ["Inventing a WidgetPhi card ID", "Copying QuantaPhi executable source into this repository", "Auto-submit or replace original forms", "Claiming live operation from configuration tests"]
       }
     },
     {
