@@ -1,0 +1,35 @@
+name: "Search & Research Cards"
+description: "Request a source-backed Search & Research Cards card or improvement."
+title: "[Template] search-research — "
+body:
+  - type: markdown
+    attributes:
+      value: "Use existing source and Oracle styling. This form is NOT authorization to auto-publish or modify wallets."
+  - type: input
+    id: repository
+    attributes:
+      label: Where should Bubbles use this card?
+      placeholder: "https://github.com/www-infinity4/QuantaPhi"
+    validations:
+      required: true
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Required working card interaction
+      description: "Describe the specific function, existing source, and acceptance result."
+    validations:
+      required: true
+  - type: textarea
+    id: source-evidence
+    attributes:
+      label: Source URLs, real assets, and screenshots (optional)
+      description: "No passwords or API keys."
+    validations:
+      required: false
+  - type: checkboxes
+    id: release
+    attributes:
+      label: Scope and release
+      options:
+        - label: "I understand that tests, review, merge and deployment each require separate evidence."
+          required: true

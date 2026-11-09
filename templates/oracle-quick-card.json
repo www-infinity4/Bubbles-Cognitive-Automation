@@ -1,0 +1,51 @@
+{
+  "schema": "bubbles.card-template",
+  "version": 1,
+  "id": "oracle-quick-card",
+  "title": "Oracle Quick Card Builder",
+  "description": "Source-backed entry point to the original QuantaPhi Quick Card studio.",
+  "category": "Developer",
+  "source": {
+    "repo": "www-infinity4/QuantaPhi",
+    "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42",
+    "path": "quick-card-builder.html"
+  },
+  "artwork": {
+    "url": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/apps/icons/web-phi-512.png",
+    "alt": "Oracle Quick Card Builder original QuantaPhi artwork"
+  },
+  "style": {
+    "system": "Oracle Octaves",
+    "accent": "red",
+    "source": "https://github.com/www-infinity4/QuantaPhi/blob/0d2e887949d32a6817b42d071f6bfb8ce741ec42/oracle-interface.css"
+  },
+  "integration": {
+    "catalogRepo": "www-infinity4/WidgetPhi",
+    "catalogPath": "catalog/cards.json",
+    "catalogCommit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083",
+    "requiresReview": true,
+    "productionVerified": false,
+    "paymentEnabled": false,
+    "note": "Reusable configuration; not an authorized or deployed integration."
+  },
+  "widgetphi": {
+    "schema": "widgetphi.site",
+    "version": 1,
+    "title": "Oracle Quick Card Builder",
+    "cards": [
+      {
+        "instanceId": "oraclequickcard1",
+        "cardId": "card-builder-desk",
+        "settings": {
+          "title": "Oracle Quick Card Studio",
+          "index": ""
+        }
+      }
+    ]
+  },
+  "acceptance": [
+    "Record source, allowed art, card title, and interaction.",
+    "Use a real verified search, link, or supported player.",
+    "Require review before public carousel listing."
+  ]
+}

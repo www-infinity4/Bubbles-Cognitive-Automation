@@ -1,0 +1,68 @@
+{
+  "schema": "bubbles.template.catalog",
+  "version": 1,
+  "source": "www-infinity4/Bubbles-Cognitive-Automation",
+  "upstream": {
+    "repository": "www-infinity4/WidgetPhi",
+    "path": "catalog/cards.json",
+    "commit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083"
+  },
+  "templates": [
+    {
+      "id": "oracle-quick-card",
+      "title": "Oracle Quick Card Builder",
+      "category": "Developer",
+      "path": "templates/oracle-quick-card.json",
+      "artwork": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/apps/icons/web-phi-512.png",
+      "readiness": "configuration-ready; production unverified"
+    },
+    {
+      "id": "media-star",
+      "title": "Media Star Creator",
+      "category": "Media",
+      "path": "templates/media-star.json",
+      "artwork": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/apps/icons/media-star-512.png",
+      "readiness": "configuration-ready; production unverified"
+    },
+    {
+      "id": "infinity-radio",
+      "title": "Infinity Radio Player",
+      "category": "Media",
+      "path": "templates/infinity-radio.json",
+      "artwork": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/apps/icons/infinity-radio-512.png",
+      "readiness": "configuration-ready; production unverified"
+    },
+    {
+      "id": "story-writer",
+      "title": "Story Writer Studio",
+      "category": "Creative",
+      "path": "templates/story-writer.json",
+      "artwork": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/apps/icons/story-writer-512.png",
+      "readiness": "configuration-ready; production unverified"
+    },
+    {
+      "id": "physics-experiment",
+      "title": "Physics Experiment Card",
+      "category": "Learning",
+      "path": "templates/physics-experiment.json",
+      "artwork": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/apps/icons/physics-cards-512.png",
+      "readiness": "configuration-ready; production unverified"
+    },
+    {
+      "id": "shop-phi",
+      "title": "Shop Phi Product Card",
+      "category": "Shopping",
+      "path": "templates/shop-phi.json",
+      "artwork": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/apps/icons/shoplc-512.png",
+      "readiness": "configuration-ready; production unverified"
+    },
+    {
+      "id": "search-research",
+      "title": "Search & Research Cards",
+      "category": "Research",
+      "path": "templates/search-research.json",
+      "artwork": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/assets/phi-data-analyst.webp",
+      "readiness": "configuration-ready; production unverified"
+    }
+  ]
+}

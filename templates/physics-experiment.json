@@ -1,0 +1,55 @@
+{
+  "schema": "bubbles.card-template",
+  "version": 1,
+  "id": "physics-experiment",
+  "title": "Physics Experiment Card",
+  "description": "Science experiment card with references and proper image and safety notes.",
+  "category": "Learning",
+  "source": {
+    "repo": "www-infinity4/QuantaPhi",
+    "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42",
+    "path": "science-quick-card.html"
+  },
+  "artwork": {
+    "url": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/apps/icons/physics-cards-512.png",
+    "alt": "Physics Experiment Card original QuantaPhi artwork"
+  },
+  "style": {
+    "system": "Oracle Octaves",
+    "accent": "blue",
+    "source": "https://github.com/www-infinity4/QuantaPhi/blob/0d2e887949d32a6817b42d071f6bfb8ce741ec42/oracle-interface.css"
+  },
+  "integration": {
+    "catalogRepo": "www-infinity4/WidgetPhi",
+    "catalogPath": "catalog/cards.json",
+    "catalogCommit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083",
+    "requiresReview": true,
+    "productionVerified": false,
+    "paymentEnabled": false,
+    "note": "Reusable configuration; not an authorized or deployed integration."
+  },
+  "widgetphi": {
+    "schema": "widgetphi.site",
+    "version": 1,
+    "title": "Physics Experiment Card",
+    "cards": [
+      {
+        "instanceId": "physicsexperiment1",
+        "cardId": "physics-experiment",
+        "settings": {
+          "title": "Infinity Physics",
+          "character": "Julius Sumner Miller",
+          "index": "Pendulums, optics, electricity, motion",
+          "storyTitle": "",
+          "storyBody": "",
+          "storyUrl": ""
+        }
+      }
+    ]
+  },
+  "acceptance": [
+    "Use reproducible instructions and safety notes.",
+    "Use verified source illustrations and citations.",
+    "Never present hypothetical observations as measurements."
+  ]
+}

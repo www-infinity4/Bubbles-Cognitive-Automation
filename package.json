@@ -1,0 +1,14 @@
+{
+  "name": "bubbles-cognitive-automation-templates",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Seven source-backed Oracle Octaves templates for Bubbles",
+  "scripts": {
+    "test": "node --test",
+    "templates": "node scripts/template-cli.mjs list"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

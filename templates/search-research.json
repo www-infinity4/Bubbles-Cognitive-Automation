@@ -1,0 +1,63 @@
+{
+  "schema": "bubbles.card-template",
+  "version": 1,
+  "id": "search-research",
+  "title": "Search & Research Cards",
+  "description": "Combined searchable source index and first-party research viewing.",
+  "category": "Research",
+  "source": {
+    "repo": "www-infinity4/WidgetPhi",
+    "commit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083",
+    "path": "src/catalog.js"
+  },
+  "artwork": {
+    "url": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/assets/phi-data-analyst.webp",
+    "alt": "Search & Research Cards original QuantaPhi artwork"
+  },
+  "style": {
+    "system": "Oracle Octaves",
+    "accent": "orange",
+    "source": "https://github.com/www-infinity4/QuantaPhi/blob/0d2e887949d32a6817b42d071f6bfb8ce741ec42/oracle-interface.css"
+  },
+  "integration": {
+    "catalogRepo": "www-infinity4/WidgetPhi",
+    "catalogPath": "catalog/cards.json",
+    "catalogCommit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083",
+    "requiresReview": true,
+    "productionVerified": false,
+    "paymentEnabled": false,
+    "note": "Reusable configuration; not an authorized or deployed integration."
+  },
+  "widgetphi": {
+    "schema": "widgetphi.site",
+    "version": 1,
+    "title": "Search & Research Cards",
+    "cards": [
+      {
+        "instanceId": "searchresearch1",
+        "cardId": "search-engine",
+        "settings": {
+          "title": "Search My Site",
+          "mode": "images-first",
+          "siteIndex": "",
+          "captureResearch": true,
+          "showViewer": true
+        }
+      },
+      {
+        "instanceId": "searchresearch2",
+        "cardId": "research-viewer",
+        "settings": {
+          "title": "Research Viewer",
+          "mode": "in-site-content",
+          "trackClicks": true
+        }
+      }
+    ]
+  },
+  "acceptance": [
+    "Use verified indexed data, not invented results.",
+    "Link out when providers prohibit embedding.",
+    "Store user research only with consent and verified tenancy."
+  ]
+}

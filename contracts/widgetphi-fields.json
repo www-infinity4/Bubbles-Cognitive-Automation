@@ -1,0 +1,338 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "repo": "www-infinity4/WidgetPhi",
+    "path": "catalog/cards.json",
+    "commit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083"
+  },
+  "cards": [
+    {
+      "id": "search-engine",
+      "name": "Search Engine",
+      "readiness": "integration",
+      "settings": [
+        {
+          "key": "title",
+          "label": "Card name",
+          "type": "text",
+          "default": "Search My Site"
+        },
+        {
+          "key": "mode",
+          "label": "Default search mode",
+          "type": "select",
+          "options": [
+            "ai-overview",
+            "images-first",
+            "links-only",
+            "quanta-style"
+          ],
+          "default": "quanta-style"
+        },
+        {
+          "key": "siteIndex",
+          "label": "Your site research keywords (comma-separated)",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "key": "captureResearch",
+          "label": "Attach approved research to this site",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "key": "showViewer",
+          "label": "Include Research Viewer card",
+          "type": "boolean",
+          "default": true
+        }
+      ]
+    },
+    {
+      "id": "research-viewer",
+      "name": "Research Viewer",
+      "readiness": "integration",
+      "settings": [
+        {
+          "key": "title",
+          "label": "Card name",
+          "type": "text",
+          "default": "Research Viewer"
+        },
+        {
+          "key": "mode",
+          "label": "Viewing mode",
+          "type": "select",
+          "options": [
+            "in-site-content",
+            "source-link"
+          ],
+          "default": "in-site-content"
+        },
+        {
+          "key": "trackClicks",
+          "label": "Record site-approved interactions",
+          "type": "boolean",
+          "default": true
+        }
+      ]
+    },
+    {
+      "id": "story-writer",
+      "name": "Story Writer",
+      "readiness": "integration",
+      "settings": [
+        {
+          "key": "title",
+          "label": "Card name",
+          "type": "text",
+          "default": "Story Writer"
+        },
+        {
+          "key": "index",
+          "label": "Themes and source index",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "key": "allowImageInput",
+          "label": "Allow user-supplied image",
+          "type": "boolean",
+          "default": true
+        }
+      ]
+    },
+    {
+      "id": "infinity-radio",
+      "name": "Infinity Radio",
+      "readiness": "integration",
+      "settings": [
+        {
+          "key": "title",
+          "label": "Station name",
+          "type": "text",
+          "default": "My Radio"
+        },
+        {
+          "key": "index",
+          "label": "Artists, genres and authorized feed index",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "key": "autoplay",
+          "label": "Autoplay",
+          "type": "boolean",
+          "default": false
+        }
+      ]
+    },
+    {
+      "id": "media-star",
+      "name": "Media Star",
+      "readiness": "template",
+      "settings": [
+        {
+          "key": "title",
+          "label": "Show brand",
+          "type": "text",
+          "default": "My Media Star"
+        },
+        {
+          "key": "index",
+          "label": "Approved hosts and episode URLs",
+          "type": "textarea",
+          "default": ""
+        },
+        {
+          "key": "shuffle",
+          "label": "Shuffle without repeats",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "key": "access",
+          "label": "Reader access",
+          "type": "select",
+          "options": [
+            "free",
+            "paid"
+          ],
+          "default": "free"
+        },
+        {
+          "key": "priceStarCoins",
+          "label": "Proposed creator curation price (whole StarCoins)",
+          "type": "number",
+          "min": 0,
+          "max": 100,
+          "default": 1
+        },
+        {
+          "key": "mediaKind",
+          "label": "Media collection type",
+          "type": "select",
+          "options": [
+            "mixed",
+            "audio",
+            "video",
+            "art-gallery"
+          ],
+          "default": "mixed"
+        },
+        {
+          "key": "avatarLabel",
+          "label": "Avatar / host display",
+          "type": "text",
+          "default": "My Curator"
+        },
+        {
+          "key": "theme",
+          "label": "Card atmosphere",
+          "type": "select",
+          "options": [
+            "sun-gold",
+            "oracle-purple",
+            "gallery-white",
+            "deep-night"
+          ],
+          "default": "sun-gold"
+        },
+        {
+          "key": "sourceRule",
+          "label": "Playback strategy",
+          "type": "select",
+          "options": [
+            "official-player-first",
+            "original-link-first"
+          ],
+          "default": "official-player-first"
+        }
+      ]
+    },
+    {
+      "id": "card-builder-desk",
+      "name": "Card Builder Desk",
+      "readiness": "template",
+      "settings": [
+        {
+          "key": "title",
+          "label": "Card name",
+          "type": "text",
+          "default": "Card Builder Desk"
+        },
+        {
+          "key": "index",
+          "label": "Owner content and topic index",
+          "type": "textarea",
+          "default": ""
+        }
+      ]
+    },
+    {
+      "id": "shop-phi",
+      "name": "Shop Phi · Curated Store",
+      "readiness": "existing",
+      "settings": [
+        {
+          "key": "title",
+          "label": "Name this Shop Phi card",
+          "type": "text",
+          "default": "My Curated Store"
+        },
+        {
+          "key": "creatorBrand",
+          "label": "Curator display name",
+          "type": "text",
+          "default": "My Picks"
+        },
+        {
+          "key": "query",
+          "label": "Curated topic",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "key": "index",
+          "label": "Source product, store, and advertisement links (one per line)",
+          "type": "textarea",
+          "default": ""
+        },
+        {
+          "key": "priceStarCoins",
+          "label": "Proposed price for next curation (whole StarCoins)",
+          "type": "number",
+          "min": 0,
+          "max": 100,
+          "default": 1
+        },
+        {
+          "key": "firstFree",
+          "label": "First featured selection is free",
+          "type": "boolean",
+          "default": true
+        },
+        {
+          "key": "selectionMode",
+          "label": "Curator selection order",
+          "type": "select",
+          "options": [
+            "no-repeat-shuffle",
+            "owner-sequence"
+          ],
+          "default": "no-repeat-shuffle"
+        },
+        {
+          "key": "showSponsorDisclosure",
+          "label": "Label paid placements and affiliate links",
+          "type": "boolean",
+          "default": true
+        }
+      ]
+    },
+    {
+      "id": "physics-experiment",
+      "name": "Infinity Physics Experiment",
+      "readiness": "integration",
+      "settings": [
+        {
+          "key": "title",
+          "label": "Physics series name",
+          "type": "text",
+          "default": "Infinity Physics"
+        },
+        {
+          "key": "character",
+          "label": "Preferred experiment guide",
+          "type": "text",
+          "default": "Julius Sumner Miller"
+        },
+        {
+          "key": "index",
+          "label": "Topics and verified experiment sources",
+          "type": "textarea",
+          "default": "Pendulums, optics, electricity, motion"
+        },
+        {
+          "key": "storyTitle",
+          "label": "Optional story title",
+          "type": "text",
+          "default": ""
+        },
+        {
+          "key": "storyBody",
+          "label": "Optional story",
+          "type": "textarea",
+          "default": ""
+        },
+        {
+          "key": "storyUrl",
+          "label": "Story or website link",
+          "type": "text",
+          "default": ""
+        }
+      ]
+    }
+  ]
+}

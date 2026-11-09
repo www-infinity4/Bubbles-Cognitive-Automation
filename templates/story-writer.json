@@ -1,0 +1,52 @@
+{
+  "schema": "bubbles.card-template",
+  "version": 1,
+  "id": "story-writer",
+  "title": "Story Writer Studio",
+  "description": "Original creative writing with optional user-provided pictures.",
+  "category": "Creative",
+  "source": {
+    "repo": "www-infinity4/QuantaPhi",
+    "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42",
+    "path": "phi-story-writer.js"
+  },
+  "artwork": {
+    "url": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/apps/icons/story-writer-512.png",
+    "alt": "Story Writer Studio original QuantaPhi artwork"
+  },
+  "style": {
+    "system": "Oracle Octaves",
+    "accent": "purple",
+    "source": "https://github.com/www-infinity4/QuantaPhi/blob/0d2e887949d32a6817b42d071f6bfb8ce741ec42/oracle-interface.css"
+  },
+  "integration": {
+    "catalogRepo": "www-infinity4/WidgetPhi",
+    "catalogPath": "catalog/cards.json",
+    "catalogCommit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083",
+    "requiresReview": true,
+    "productionVerified": false,
+    "paymentEnabled": false,
+    "note": "Reusable configuration; not an authorized or deployed integration."
+  },
+  "widgetphi": {
+    "schema": "widgetphi.site",
+    "version": 1,
+    "title": "Story Writer Studio",
+    "cards": [
+      {
+        "instanceId": "storywriter1",
+        "cardId": "story-writer",
+        "settings": {
+          "title": "Story Writer",
+          "index": "",
+          "allowImageInput": true
+        }
+      }
+    ]
+  },
+  "acceptance": [
+    "Preserve private drafts unless deliberately published.",
+    "Call only a verified model or image endpoint and show errors.",
+    "Test image handling, keyboard and mobile input."
+  ]
+}

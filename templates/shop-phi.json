@@ -1,0 +1,57 @@
+{
+  "schema": "bubbles.card-template",
+  "version": 1,
+  "id": "shop-phi",
+  "title": "Shop Phi Product Card",
+  "description": "Image-first curated product card with source links, no fabricated checkout.",
+  "category": "Shopping",
+  "source": {
+    "repo": "www-infinity4/QuantaPhi",
+    "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42",
+    "path": "shop-phi-switchboard.mjs"
+  },
+  "artwork": {
+    "url": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/apps/icons/shoplc-512.png",
+    "alt": "Shop Phi Product Card original QuantaPhi artwork"
+  },
+  "style": {
+    "system": "Oracle Octaves",
+    "accent": "green",
+    "source": "https://github.com/www-infinity4/QuantaPhi/blob/0d2e887949d32a6817b42d071f6bfb8ce741ec42/oracle-interface.css"
+  },
+  "integration": {
+    "catalogRepo": "www-infinity4/WidgetPhi",
+    "catalogPath": "catalog/cards.json",
+    "catalogCommit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083",
+    "requiresReview": true,
+    "productionVerified": false,
+    "paymentEnabled": false,
+    "note": "Reusable configuration; not an authorized or deployed integration."
+  },
+  "widgetphi": {
+    "schema": "widgetphi.site",
+    "version": 1,
+    "title": "Shop Phi Product Card",
+    "cards": [
+      {
+        "instanceId": "shopphi1",
+        "cardId": "shop-phi",
+        "settings": {
+          "title": "Shop Phi",
+          "creatorBrand": "My Picks",
+          "query": "",
+          "index": "",
+          "priceStarCoins": 0,
+          "firstFree": true,
+          "selectionMode": "no-repeat-shuffle",
+          "showSponsorDisclosure": true
+        }
+      }
+    ]
+  },
+  "acceptance": [
+    "Verify actual item photos, URLs, prices and terms.",
+    "Disclose affiliate links; keep official merchant checkout.",
+    "Never charge wallets without separate authorized integration."
+  ]
+}

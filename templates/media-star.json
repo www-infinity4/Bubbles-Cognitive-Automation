@@ -1,0 +1,58 @@
+{
+  "schema": "bubbles.card-template",
+  "version": 1,
+  "id": "media-star",
+  "title": "Media Star Creator",
+  "description": "Creator-curated audio/video card based on the authentic Media Star.",
+  "category": "Media",
+  "source": {
+    "repo": "www-infinity4/QuantaPhi",
+    "commit": "0d2e887949d32a6817b42d071f6bfb8ce741ec42",
+    "path": "media-star-creator.js"
+  },
+  "artwork": {
+    "url": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/apps/icons/media-star-512.png",
+    "alt": "Media Star Creator original QuantaPhi artwork"
+  },
+  "style": {
+    "system": "Oracle Octaves",
+    "accent": "yellow",
+    "source": "https://github.com/www-infinity4/QuantaPhi/blob/0d2e887949d32a6817b42d071f6bfb8ce741ec42/oracle-interface.css"
+  },
+  "integration": {
+    "catalogRepo": "www-infinity4/WidgetPhi",
+    "catalogPath": "catalog/cards.json",
+    "catalogCommit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083",
+    "requiresReview": true,
+    "productionVerified": false,
+    "paymentEnabled": false,
+    "note": "Reusable configuration; not an authorized or deployed integration."
+  },
+  "widgetphi": {
+    "schema": "widgetphi.site",
+    "version": 1,
+    "title": "Media Star Creator",
+    "cards": [
+      {
+        "instanceId": "mediastar1",
+        "cardId": "media-star",
+        "settings": {
+          "title": "Media Star",
+          "index": "",
+          "shuffle": true,
+          "access": "free",
+          "priceStarCoins": 0,
+          "mediaKind": "mixed",
+          "avatarLabel": "My Curator",
+          "theme": "sun-gold",
+          "sourceRule": "official-player-first"
+        }
+      }
+    ]
+  },
+  "acceptance": [
+    "Use authorized media URLs and original credits.",
+    "Verify playback or show the original provider link.",
+    "Keep payments and royalties disabled until independently verified."
+  ]
+}

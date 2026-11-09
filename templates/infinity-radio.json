@@ -1,0 +1,52 @@
+{
+  "schema": "bubbles.card-template",
+  "version": 1,
+  "id": "infinity-radio",
+  "title": "Infinity Radio Player",
+  "description": "Audio-card starter for approved stations and visible player status.",
+  "category": "Media",
+  "source": {
+    "repo": "www-infinity4/Oracle-Octaves",
+    "commit": "390ac5e5358e08aecd487bea81741b8e82b8176a",
+    "path": "oracle-infinity-radio.js"
+  },
+  "artwork": {
+    "url": "https://raw.githubusercontent.com/www-infinity4/QuantaPhi/0d2e887949d32a6817b42d071f6bfb8ce741ec42/apps/icons/infinity-radio-512.png",
+    "alt": "Infinity Radio Player original QuantaPhi artwork"
+  },
+  "style": {
+    "system": "Oracle Octaves",
+    "accent": "purple",
+    "source": "https://github.com/www-infinity4/QuantaPhi/blob/0d2e887949d32a6817b42d071f6bfb8ce741ec42/oracle-interface.css"
+  },
+  "integration": {
+    "catalogRepo": "www-infinity4/WidgetPhi",
+    "catalogPath": "catalog/cards.json",
+    "catalogCommit": "d5dfb013933fef2ea6ff2c8748d762a4476a7083",
+    "requiresReview": true,
+    "productionVerified": false,
+    "paymentEnabled": false,
+    "note": "Reusable configuration; not an authorized or deployed integration."
+  },
+  "widgetphi": {
+    "schema": "widgetphi.site",
+    "version": 1,
+    "title": "Infinity Radio Player",
+    "cards": [
+      {
+        "instanceId": "infinityradio1",
+        "cardId": "infinity-radio",
+        "settings": {
+          "title": "Infinity Radio",
+          "index": "",
+          "autoplay": false
+        }
+      }
+    ]
+  },
+  "acceptance": [
+    "Use a live authorized station feed, not a fake stream.",
+    "Keep a single player and preserve playback across carousel changes.",
+    "Respect autoplay policy and show genuine error states."
+  ]
+}
